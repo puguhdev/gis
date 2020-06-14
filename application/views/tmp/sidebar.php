@@ -26,7 +26,7 @@
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i><span>Data Master</span></a>
 				<ul class="dropdown-menu">
 					<li><a class="nav-link" href="<?=site_url('master/jurusan')?>">Master Jurusan</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Kelas</a></li>
+					<li><a class="nav-link" href="<?=site_url('master/kelas')?>">Master Kelas</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Master Rombel</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Master Pendidikan</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Master Pekerjaan</a></li>

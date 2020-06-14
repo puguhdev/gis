@@ -66,7 +66,6 @@ class Jurusan extends Admin_Controller {
                 'id_jurusan'    => $id_jurusan,
                 'nama_jurusan'  => $nama,
                 'title_jurusan' => $title,
-                'url_jurusan'   => md5($nama),
                 'created_at'    => date('Y-m-d')
             ];
         }
