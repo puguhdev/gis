@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="<?=site_url('vendor/backend/css/style.css')?>">
     <link rel="stylesheet" type="text/css" href="<?=site_url('vendor/backend/css/components.css')?>">
     <link rel="stylesheet" type="text/css" href="<?=site_url('vendor/backend/css/all.min.css')?>">
-
+    <link rel="stylesheet" type="text/css" href="<?=site_url('vendor/backend/css/datatable.css')?>">
+    
     <link rel="icon" href="<?= site_url('assets/img/logo.png'); ?>">
     
 </head>
@@ -47,12 +48,19 @@
     <script src="<?=site_url('vendor/backend/js/moment.js')?>"></script> 
     <script src="<?=site_url('vendor/backend/js/scripts.js')?>"></script> 
     <script src="<?=site_url('vendor/backend/js/jquery.nicescroll.min.js')?>"></script> 
-    <script>
+    <script src="<?=site_url('vendor/backend/js/jquery.dataTables.min.js')?>"></script> 
+    <script src="<?=site_url('vendor/backend/js/datatable.js')?>"></script> 
+    <script type="text/javascript">
         window.setTimeout(function() {
             $(".alert").fadeIn(500, 0).fadeOut(500, function(){
             $(this).remove(); 
             });
         }, 3000);
+     </script>
+     <script type="text/javascript">
+         $(document).ready(function() {
+            $('#tableku').DataTable();
+        } )
      </script>
 </body>
 </html>

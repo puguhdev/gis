@@ -16,7 +16,7 @@
 			<li class="nav-item dropdown">
 				<a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i><span>Data Peserta Didik</span></a>
 				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="<?=site_url()?>">Semua Peserta Didik</a></li>
+					<li><a class="nav-link" href="<?=site_url('siswa/siswa')?>">Semua Peserta Didik</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Tambah Peserta Didik</a></li>
 					<li><a class="nav-link" href="<?=site_url()?>">Nilai Peserta Didik</a></li>
 				</ul>

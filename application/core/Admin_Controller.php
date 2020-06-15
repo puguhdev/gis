@@ -11,6 +11,7 @@ class Admin_Controller extends MY_Controller {
     public $vars = [
 		'header' 	=> 'tmp/header',
 		'sidebar' 	=> 'tmp/sidebar',
+		'alert' 	=> 'tmp/alert',
 		'content'	=> '',
 		'title'		=> ''
 	];
