@@ -614,3 +614,69 @@ $(function() {
     });
   }
 });
+
+
+// My Allert
+
+  window.setTimeout(function() {
+    $("#alert").fadeIn(500, 0).fadeOut(500, function(){
+    $(this).remove(); 
+    });
+}, 3000);
+
+
+// data Table
+$(document).ready(function() {
+  $('#tableku').DataTable();
+} )
+
+// Preview Upload Image
+function readURL(input) {
+  if (input.files && input.files[0]) {
+  var reader = new FileReader();
+
+  reader.onload = function (e) {
+      $('#prev_foto').attr('src', e.target.result);
+
+      }
+      reader.readAsDataURL(input.files[0]);
+      }
+  }
+
+  $(document).ready(function(){
+  $('#file_gambar').change(function(){
+  readURL(this);
+  });
+});
+
+$(function () {
+  $('#table').DataTable()
+  $('#table2').DataTable({
+    'paging'      : true,
+    'lengthChange': false,
+    'searching'   : false,
+    'ordering'    : true,
+    'info'        : true,
+    'autoWidth'   : false
+  })
+  $('#table-id').DataTable({
+    'paging'      : true,
+    'lengthChange': false,
+    'searching'   : true,
+    'ordering'    : true,
+    'info'        : true,
+    'autoWidth'   : false
+  })
+})
+
+// Datepicker
+$(function (){
+  $('#tanggal').datepicker({
+      autoclose: true,
+      format: 'yyyy-mm-dd'
+    })
+    $('#tanggal2').datepicker({
+      autoclose: true,
+      format: 'yyyy-mm-dd'
+    })
+});

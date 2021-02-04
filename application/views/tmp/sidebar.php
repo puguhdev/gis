@@ -2,40 +2,17 @@
 	<aside id="sidebar-wrapper">
 
 		<div class="sidebar-brand">
-            <a href="index.html">SISFO</a>
+            <a href="<?=site_url('dashboard')?>">CEMILLAN PANEL</a>
     	</div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">SF</a>
+            <a href="<?=site_url('dashboard')?>">CP</a>
 		</div>
 
 		<!-- Main Menu -->
 		<ul class="sidebar-menu">
-			<li class="menu-header">Super Admin</li>
-			<li><a class="nav-link" href="<?=site_url()?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-
-			<li class="nav-item dropdown">
-				<a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i><span>Data Peserta Didik</span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="<?=site_url('siswa/siswa')?>">Semua Peserta Didik</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Tambah Peserta Didik</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Nilai Peserta Didik</a></li>
-				</ul>
-			</li>
-
-			<li class="nav-item dropdown">
-				<a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i><span>Data Master</span></a>
-				<ul class="dropdown-menu">
-					<li><a class="nav-link" href="<?=site_url('master/jurusan')?>">Master Jurusan</a></li>
-					<li><a class="nav-link" href="<?=site_url('master/kelas')?>">Master Kelas</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Rombel</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Pendidikan</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Pekerjaan</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Jabatan</a></li>
-					<li><a class="nav-link" href="<?=site_url()?>">Master Status GTK</a></li>
-				</ul>
-			</li>
-
-
+			<li><a class="nav-link" href="<?=site_url('dashboard')?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+			<li><a class="nav-link" href="<?=site_url('maps/kecamatan')?>"><i class="fas fa-map"></i> <span>Kecamatan</span></a></li>
+			
 		</ul>
 		  
 	</aside>
